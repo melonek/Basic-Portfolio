@@ -9,6 +9,8 @@ body {
   padding: 0;
   font-weight: 400;
   background-image: url(/assets/images/background.png);
+  background: rgb(236, 231, 231);
+  display: block;
   background-position: center cover repeat;
   position: relative;
   min-height: 100%;
@@ -104,6 +106,7 @@ nav a:hover::before {
   overflow: auto;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 20px;
   max-width: 960px;
   min-height: 100%;
   padding-right: 10px;

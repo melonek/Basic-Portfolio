@@ -1,16 +1,19 @@
 * {
   box-sizing: border-box;
 }
-
+a {
+  text-decoration-style: none;
+}
 body {
   margin: 0;
   padding: 0;
-  background: lightgray;
   font-weight: 400;
+  background-image: url(/assets/images/background.png);
+  background-position: center cover repeat;
 }
 
 .container {
-  width: 57%;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -30,7 +33,7 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 24px;
   margin: 0;
-  padding: 23px;
+  padding: 22px;
 }
 
 #line {
@@ -83,7 +86,7 @@ nav a:hover::before {
 }
 
 .container2 {
-  width: 57%;
+  /* width: 57%; possible to use instead of the wrapper (max-width: 960px?) */
   height: auto;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -95,6 +98,7 @@ nav a:hover::before {
   clear: both;
   box-sizing: border-box;
   overflow: auto;
+  max-width: 960px;
 }
 
 img {
@@ -122,7 +126,7 @@ footer {
   background: #666666;
   text-align: center;
   border-top: solid 5px #4aaaa5;
-  position: static;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }

@@ -1,60 +1,199 @@
-
-h3 {
-  color: #4aaaa5
+* {
+  box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
+  background: lightgray;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
 }
-#htmls {
-  text-align: right;
-  color: gray;
-  top: 20px;
-  right: 0;
-  font-family: Arial, Helvetica, sans-serif;
+
+.container {
+  width: 57%;
+  /* margin: 0 auto; */
+}
+
+header {
+  background: white;
+  position: relative; /*this didn't have to be there*/
+  margin: 0;
+  padding: 0;
+  border-bottom: gray solid 1px;
 }
 
 h1 {
-  margin-right: 100px;
+  float: left;
   color: white;
-  background-color: #4aaaa5;
+  position: absolute; /*this didn't have to be there*/
+  background: rgb(56, 167, 167);
   margin: 0;
-  width: 240px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18pt;
-  padding:30px;
-  margin-left: 260px;
-  line-height: 1em;
-  border-bottom-style: groove;
+  padding: 17px;
 }
-h1,h2 {
-  display: inline;
-  line-height: 3em;
+
+nav {
+  float: right;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+  padding: 25px;
+  position: relative;
+}
+
+nav a {
+  color: gray;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  background: rgb(56, 167, 167);
+  top: 0;
+  width: 0%;
+}
+nav a:hover::before {
+  width: 100%;
+  transition: all ease-in-out 250ms;
+}
+
+.container2 {
+  width: 57%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border: solid 1px gray;
+  margin-top: 40px;
+  padding: 20px;
+  background: whitesmoke;
+  position: relative;
+  clear: both;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+img {
+  width: 100px;
+  height: 90px;
+  float: left;
+  clear: both;
+}
+
+p {
+  color: gray;
+  top: 80px;
+  line-height: 2em;
 }
 
 h2 {
-  margin: 0;
-  text-align: right;
-  color: lightgray;
-  margin: 0;
-  margin-left: 300px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12pt;
+  color: rgb(56, 167, 167);
 }
 
-.wrapper {
-  width: 750px;
-  margin: 0 auto 0 auto;
-  padding: 0;
+footer {
+  padding: 10px;
+  color: white;
+  background: rgb(104, 107, 107);
+  text-align: center;
+  border-top: solid 5px rgb(56, 167, 167);
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+/*---This part of CSS includes Portfolio Page styling (Photo Gallery)---*/
+
+div.gallery {
+  margin: 5px;
+  top: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  clear: right;
+  width: 180px;
+  height: 180px;
+  position: relative;
 }
 
-#content {
-  font-family: Arial, Helvetica, sans-serif;
-  color: gray;
-  border-style: groove;
-  border-width: 1px;
-  padding-top: 40px;
+div.gallery:hover {
+  border: 1px solid #777;
 }
-a:link {
-  text-decoration: none ;
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  float: left;
+  clear: both;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+div.desc {
+  padding: 12px;
+  text-align: center;
+  width: 178px;
+  left: 0;
+  bottom: 20px;
+  background: rgb(56, 167, 167);
+  position: absolute;
+  overflow: auto;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container3 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#message {
+  height: 100px;
 }

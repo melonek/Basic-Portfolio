@@ -10,6 +10,9 @@ body {
   font-weight: 400;
   background-image: url(/assets/images/background.png);
   background-position: center cover repeat;
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
 }
 
 .container {
@@ -86,19 +89,25 @@ nav a:hover::before {
 }
 
 .container2 {
+  /*this container wraps content of my page (main, gallery, contact form)*/
   /* width: 57%; possible to use instead of the wrapper (max-width: 960px?) */
   height: auto;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  /* margin: 0 auto; */
+  /* margin-bottom: 40px; */
   border: solid 1px #dddddd;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   padding: 20px;
   background: #ffffff;
   position: relative;
   clear: both;
   box-sizing: border-box;
   overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 960px;
+  min-height: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 img {
@@ -125,22 +134,26 @@ footer {
   color: #cecbcb;
   background: #666666;
   text-align: center;
-  border-top: solid 5px #4aaaa5;
-  position: fixed;
+  border-top: 8px solid #4aaaa5;
   bottom: 0;
   width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 /*---This part of CSS includes Portfolio Page styling (Photo Gallery)---*/
 
 div.gallery {
   margin: 5px;
+  margin-right: 45px;
   top: 0;
-  padding: 20px;
+  padding: 50px;
   border: 1px solid #ccc;
   float: left;
   clear: right;
-  width: 180px;
-  height: 180px;
+  width: 300px;
+  height: 300px;
   position: relative;
 }
 
@@ -163,7 +176,7 @@ div.desc {
   padding: 12px;
   color: #dddddd;
   text-align: center;
-  width: 178px;
+  width: 298px;
   left: 0;
   bottom: 20px;
   background: rgb(56, 167, 167);

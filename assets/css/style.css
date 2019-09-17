@@ -8,9 +8,9 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  background: url(..//images/background.jpg) cover; /* No idea why this wouldn't work? Hence no background image
-  also tried background-image: no repeat etc. hm... */
   background: rgb(236, 234, 234);
+  background: url("../images/background.jpg"); /* No idea why this wouldn't work? Hence no background image
+  also tried background-image: no repeat etc. hm... */
   position: relative;
   min-height: 100%;
   min-height: 100vh;

@@ -8,10 +8,9 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  background-image: url(/assets/images/background.png);
-  background: rgb(236, 231, 231);
-  display: block;
-  background-position: center cover repeat;
+  background: url(..//images/background.jpg) cover; /* No idea why this wouldn't work? Hence no background image
+  also tried background-image: no repeat etc. hm... */
+  background: rgb(236, 234, 234);
   position: relative;
   min-height: 100%;
   min-height: 100vh;
@@ -43,6 +42,9 @@ h1 {
 
 #line {
   border: solid 1px #dddddd;
+  width: 96%;
+  margin-left: 17px;
+  margin-bottom: 10px;
 }
 
 nav {
@@ -98,7 +100,7 @@ nav a:hover::before {
   /* margin-bottom: 40px; */
   border: solid 1px #dddddd;
   /* margin-top: 40px; */
-  padding: 20px;
+  padding: 30px;
   background: #ffffff;
   position: relative;
   clear: both;
@@ -130,6 +132,7 @@ p {
 
 h2 {
   color: #4aaaa5;
+  margin-left: 20px;
 }
 
 footer {
@@ -152,7 +155,7 @@ div.gallery {
   margin-right: 45px;
   top: 0;
   padding: 50px;
-  border: 1px solid #ccc;
+  border: 1px solid #dddddd;
   float: left;
   clear: right;
   width: 300px;
@@ -192,7 +195,7 @@ select,
 textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
+  border: 1px solid #dddddd; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -202,8 +205,8 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
+  background-color: #4aaaa5;
+  color: #ffffff;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -212,13 +215,13 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #4a8b88;
 }
 
 /* Add a background color and some padding around the form */
 .container3 {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding: 20px;
 }
 
